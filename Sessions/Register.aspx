@@ -3,6 +3,17 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+<%--    steps to store data in DB-
+    1.create database table
+    2.design UI i.e. form
+    3.Setup connection string - Data Souce=servername;Initial Catalog=Database name;Integrated security=true OR userid & password
+    4.Create connection class
+    5.Write button click event to store data--%>
+
+
+
+
      <div class="container" style="margin-top: 50px">
      <div class="row">
          <div class="col-md-6">
@@ -28,7 +39,7 @@
                      <asp:ListItem Text="Delhi" Value="DEL"></asp:ListItem>
                  </asp:DropDownList>
              </div>
-             <div class="form-group">
+           <%--  <div class="form-group">
                  <label for="pwd">Photo:</label>
                  <asp:FileUpload CssClass="form-control" runat="server" ID="fuPoto" />
              </div>
@@ -39,8 +50,8 @@
              <div class="form-group">
                  <label for="pwd">Set Password:</label>
                  <asp:TextBox TextMode="Password" runat="server" ID="txtPassword" CssClass="form-control" placeholder="Set Password"></asp:TextBox>
-             </div>
-             <asp:Button runat="server" Text="Submit" ID="btnSubmit" CssClass="btn btn-primary" />
+             </div>--%>
+             <asp:Button runat="server" Text="Submit" OnClick="btnSubmit_Click" ID="btnSubmit" CssClass="btn btn-primary" />
          </div>
      </div>
 
